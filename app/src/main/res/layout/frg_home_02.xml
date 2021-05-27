@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test01" />
+
+            <Button
+                android:id="@+id/btn_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test01" />
+
+            <Button
+                android:id="@+id/btn_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码框" />
+
+            <Button
+                android:id="@+id/btn_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="test01" />
+
+
+            <Button
+                android:id="@+id/btn_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="show top pop" />
+
+
+            <Button
+                android:id="@+id/btn_06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ijkplayer" />
+
+            <Button
+                android:id="@+id/btn_07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Myijkplayer" />
+
+            <Button
+                android:id="@+id/btn_08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GSYVideo" />
+
+            <Button
+                android:id="@+id/btn_09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JzvdVideo" />
+
+            <Button
+                android:id="@+id/btn_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JzvdVideo_tiktok" />
+
+            <ImageView
+                android:id="@+id/iv_content"
+                android:layout_width="300px"
+                android:layout_height="300px"
+                android:scaleType="centerCrop" />
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>

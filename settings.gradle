@@ -1,0 +1,67 @@
+include ':app'
+rootProject.name = "macm"
+
+include ":autolayout"
+project(":autolayout").projectDir= new File("library/autolayout")
+
+include ":common"
+project(":common").projectDir= new File("library/common")
+
+include ":base-diskcache"
+project(":base-diskcache").projectDir= new File("library/base-diskcache")
+
+include ":magicindicator"
+project(":magicindicator").projectDir= new File("library/magicindicator")
+
+include ":imageloader"
+project(":imageloader").projectDir= new File("library/imageloader")
+
+include ":jzplayer"
+project(":jzplayer").projectDir= new File("video_jz/library")
+
+include ":ijkplayer"
+project(":ijkplayer").projectDir= new File("video_library/ijkplayer-example")
+
+include ":ijkplayer-exo"
+project(":ijkplayer-exo").projectDir= new File("video_library/ijkplayer-exo")
+
+include ":ijkplayer-java"
+project(":ijkplayer-java").projectDir= new File("video_library/ijkplayer-java")
+
+include ":gsyVideoPlayer"
+project(":gsyVideoPlayer").projectDir= new File("video_gsy/gsyVideoPlayer")
+
+include ":gsyVideoPlayer-java"
+project(":gsyVideoPlayer-java").projectDir= new File("video_gsy/gsyVideoPlayer-java")
+
+include ":gsyVideoPlayer-armv5"
+project(":gsyVideoPlayer-armv5").projectDir= new File("video_gsy/gsyVideoPlayer-armv5")
+
+include ":gsyVideoPlayer-armv7a"
+project(":gsyVideoPlayer-armv7a").projectDir= new File("video_gsy/gsyVideoPlayer-armv7a")
+
+include ":gsyVideoPlayer-armv64"
+project(":gsyVideoPlayer-armv64").projectDir= new File("video_gsy/gsyVideoPlayer-armv64")
+
+include ":gsyVideoPlayer-x86"
+project(":gsyVideoPlayer-x86").projectDir= new File("video_gsy/gsyVideoPlayer-x86")
+
+include ":gsyVideoPlayer-x86_64"
+project(":gsyVideoPlayer-x86_64").projectDir= new File("video_gsy/gsyVideoPlayer-x86_64")
+
+include ":gsyVideoPlayer-ex_so"
+project(":gsyVideoPlayer-ex_so").projectDir= new File("video_gsy/gsyVideoPlayer-ex_so")
+
+include ":gsyVideoPlayer-exo_player2"
+project(":gsyVideoPlayer-exo_player2").projectDir= new File("video_gsy/gsyVideoPlayer-exo_player2")
+
+include ":gsyVideoPlayer-proxy_cache"
+project(":gsyVideoPlayer-proxy_cache").projectDir= new File("video_gsy/gsyVideoPlayer-proxy_cache")
+
+include ":gsyVideoPlayer-base"
+project(":gsyVideoPlayer-base").projectDir= new File("video_gsy/gsyVideoPlayer-base")
+
+
+
+
+

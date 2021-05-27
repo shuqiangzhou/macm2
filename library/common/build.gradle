@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+}
+
+android {
+
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+//    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+
+//        consumerProguardFiles "consumer-rules.pro"
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+
+
+    buildTypes {
+
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+
+    api "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    api rootProject.ext.dependencies["appcompat"]
+    api rootProject.ext.dependencies["core"]
+    api rootProject.ext.dependencies["material"]
+    api rootProject.ext.dependencies["multidex"]
+    api rootProject.ext.dependencies["glide"]
+    api rootProject.ext.dependencies["xutils"]
+    api project(':base-diskcache')
+    api project(':autolayout')
+
+    api rootProject.ext.dependencies["banner"]
+    api rootProject.ext.dependencies["MagicIndicator"]
+
+    //刷新
+    api 'com.github.dkzwm:srl-core:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-classics:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-material:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-dynamic-rebound:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-horizontal:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-two-level:1.7.2.1'
+    api 'com.github.dkzwm:srl-ext-util:1.7.2.1'
+
+
+    //播放器
+//    api rootProject.ext.dependencies["jiaozivideoplayer"]
+    api project(':jzplayer')
+    api project(':ijkplayer')
+    api 'com.google.android.exoplayer:exoplayer:2.12.1'
+    api 'com.aliyun.sdk.android:AliyunPlayer:4.5.0-full'
+    api 'com.alivc.conan:AlivcConan:0.9.5'
+
+
+
+    //    implementation project(':imageloader')
+
+//
+//    api 'cn.jiguang.sdk:jpush-google:4.0.6'
+//    api 'cn.jiguang.sdk:jcore-google:2.8.0'
+}

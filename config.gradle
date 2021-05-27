@@ -1,0 +1,52 @@
+ext {
+
+    android = [
+            compileSdkVersion: 30,
+            buildToolsVersion: "30.0.3",
+            minSdkVersion    : 21,
+            targetSdkVersion : 26,
+            versionCode      : 1,                              //版本号
+            versionName      : "1.0",                           //版本名
+            applicationId    : "com.mail.myapplication",  //更改包名（只改这一个地方）
+            JPUSH_APPKEY     : "15dee04f186d8f7e3ec5e429"       //更改极光key
+    ]
+
+    version = [
+            androidSupportSdkVersion: "28.+",
+            retrofitSdkVersion      : "2.3.0",
+            dagger2SdkVersion       : "2.10",
+            butterknifeSdkVersion   : "8.4.0",
+            rxlifecycleSdkVersion   : "1.0",
+            rxlifecycle2SdkVersion  : "2.0.1",
+            espressoSdkVersion      : "2.2.2",
+            canarySdkVersion        : "1.5.1",
+            fastjsonVersion         : "1.2.34",
+            nohttpVersion           : "1.1.3"
+    ]
+
+    //    //com.google.android.exoplayer:exoplayer:2.13.3
+    //    //com.google.android.exoplayer:extension-rtmp:2.13.3
+    dependencies = [
+            //support
+            "design"               : "com.android.support:design:${version["androidSupportSdkVersion"]}",
+            "appcompat-v7"         : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
+            "support-v4"           : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
+            "cardview-v7"          : "com.android.support:cardview-v7:${version["androidSupportSdkVersion"]}",
+            "annotations"          : "com.android.support:support-annotations:${version["androidSupportSdkVersion"]}",
+            "recyclerview-v7"      : "com.android.support:recyclerview-v7:${version["androidSupportSdkVersion"]}",
+            "glide"                : "com.github.bumptech.glide:glide:4.10.0",
+            "xutils"               : "org.xutils:xutils:3.9.0",
+            "MagicIndicator"       : "com.github.hackware1993:MagicIndicator:1.7.0",
+            "banner"               : 'com.youth.banner:banner:2.1.0',//轮播图
+            "appcompat"            : 'androidx.appcompat:appcompat:1.2.0',
+            "core"                 : 'androidx.core:core-ktx:1.3.2',
+            "material"             : 'com.google.android.material:material:1.3.0',
+            "multidex"             : 'com.android.support:multidex:1.0.3',
+            "GSYIjkJava"           : 'com.github.CarGuo:GSYIjkJava:1.0.0',
+            "extension-rtmp"       : 'com.google.android.exoplayer:extension-rtmp:2.13.3',
+            "exoplayer"            : 'com.google.android.exoplayer:exoplayer:2.13.3',
+            "transitionseverywhere": 'com.andkulikov:transitionseverywhere:2.1.0',
+            "jiaozivideoplayer"    : 'cn.jzvd:jiaozivideoplayer:7.6.0',
+    ]
+
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relay_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/linlay_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:onClick="mainClick"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:scaleType="fitXY"
+            android:src="@drawable/empty_nodata" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="刷新一下" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/linlay_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="200px"
+            android:scaleType="fitXY"
+            android:src="@drawable/empty_no_network" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="刷新一下" />
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/progress"
+        android:layout_centerInParent="true"
+        android:layout_width="90px"
+        android:layout_height="90px"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_loading_tip" />
+
+
+</com.zhy.autolayout.AutoRelativeLayout>

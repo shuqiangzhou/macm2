@@ -1,0 +1,45 @@
+
+NestedScrollView嵌套RecyclerView时自动滚动一段距离，顶部显示不全：
+
+外层布局
+  android:focusable="true"//关键
+  android:focusableInTouchMode="true"//关键
+
+NestedScrollView嵌套RecyclerView滑动冲突
+RecyclerView
+android:nestedScrollingEnabled="false"
+
+webview.setBackgroundColor(0)
+webview.background.alpha = 0
+val map = JSONUtils.parseDataToMap(str)
+webview.loadData(map["value"], "text/html; charset=UTF-8", null)
+
+viewpager+frgment
+    public void clearFrg() {
+        if (vp.getAdapter() != null) {
+            //获取FragmentManager实现类的class对象,这里指的就是FragmentManagerImpl
+            Class<? extends FragmentManager> aClass = getChildFragmentManager().getClass();
+            try {
+                //1.获取其mAdded字段
+                Field f = aClass.getDeclaredField("mAdded");
+                f.setAccessible(true);
+                //强转成ArrayList
+                ArrayList<Fragment> list = (ArrayList) f.get(getChildFragmentManager());
+                //清空缓存
+                list.clear();
+
+                //2.获取mActive字段
+                f = aClass.getDeclaredField("mActive");
+                f.setAccessible(true);
+                //强转成SparseArray
+                SparseArray<Fragment> array = (SparseArray) f.get(getChildFragmentManager());
+                //清空缓存
+                array.clear();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+

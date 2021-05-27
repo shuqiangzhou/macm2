@@ -1,0 +1,20 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion rootProject.ext.android.compileSdkVersion
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.minSdkVersion
+        targetSdkVersion rootProject.ext.android.targetSdkVersion
+        versionCode rootProject.ext.android.versionCode
+        versionName rootProject.ext.android.versionName
+    }
+
+}
+
+
+dependencies {
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    compileOnly rootProject.ext.dependencies["appcompat-v7"]
+
+//    compileOnly rootProject.ext.appcompat_v7
+//    api 'com.qihoo360.replugin:replugin-plugin-lib:2.2.4'
+}

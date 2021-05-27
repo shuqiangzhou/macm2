@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">mc</string>
+
+
+    <string name="One_Navigation_tex">首页</string>           <!-- 第一个网页对应底部导航栏文字 -->
+    <string name="Two_Navigation_tex">大厅</string>           <!-- 第二个网页对应底部导航栏文字 -->
+    <string name="Three_Navigation_tex">聊聊</string>         <!-- 第三个网页对应底部导航栏文字 -->
+    <string name="Four_Navigation_tex">账号</string>          <!-- 第四个网页对应底部导航栏文字 -->
+
+
+    <string name="video_img_default">视频画面自适应(默认)</string>
+    <string name="video_fill_parent">视频画面填充父布局</string>
+    <string name="video_fill_crop">视频画面裁剪显示不变形</string>
+    <string name="video_img_origin">视频画面原图显示</string>
+</resources>

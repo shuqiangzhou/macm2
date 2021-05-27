@@ -1,0 +1,14 @@
+apply plugin: 'com.android.library'
+
+apply from: "${rootDir.path}/gradle/base.gradle"
+
+dependencies {
+//    api viewDependencies.exoPlayer2
+    api project(':gsyVideoPlayer-base')
+    //api "com.shuyu:gsyVideoPlayer-base:$gsyVideoVersion"
+
+
+    api rootProject.ext.dependencies["extension-rtmp"]
+    api rootProject.ext.dependencies["exoplayer"]
+
+}
